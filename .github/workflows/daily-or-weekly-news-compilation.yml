@@ -20,9 +20,9 @@ jobs:
       SENDER_PASSWORD: ${{ secrets.SENDER_PASSWORD }}
       RECIPIENT_EMAIL: ${{ secrets.RECIPIENT_EMAIL }}
       KEYWORDS: ${{ secrets.KEYWORDS }}
-      OWNER: ${{ secrets.OWNER }}
-      REPO: ${{ secrets.REPO }}      
-
+      OWNER: ${{ github.repository_owner }}
+      REPO: ${{ github.event.repository.name }}
+    
     steps:
       - name: Checkout code
         uses: actions/checkout@v3

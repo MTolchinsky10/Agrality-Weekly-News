@@ -91,7 +91,7 @@ def load_and_merge(input_dir):
 def build_email_body(merged, days_desc="último período"):
     from collections import defaultdict
 
-    body = "<h2>📰 Resumen Diario de Noticias</h2>\n"
+    body = "<h2>📰 Resumen Semanal de Noticias Agro</h2>\n"
     body += f"<p>📅 Noticias del {days_desc} (generado: {datetime.now().strftime('%d/%m/%Y %H:%M')})</p>\n"
 
     categorized = defaultdict(list)
